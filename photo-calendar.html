@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Photo Calendar
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Youdhy"
+  },
+  "headline": "Photo Calendar",
+  "datePublished": "2021-10-06",
+  "image": "https://i.pinimg.com/736x/7b/39/01/7b3901422d5f7045ecabd31b5c762e55.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ideas Website",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=photo+calendar",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<script type='text/javascript' src='//teamsperilous.com/6c/8a/2f/6c8a2fbdac647716ceab1835590239d9.js'></script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Photo Calendar
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : 'b49db508e5b562ea1c750a42d57a1291',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://teamsperilous.com/b49db508e5b562ea1c750a42d57a1291/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Photo Calendar</strong>. Upload your photos logo and even complete designs. Snapfish allows you to create unique photo calendars that showcase all your precious memories.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/474x/39/99/23/399923f6216c608c8420290dfaabb9c2.jpg" alt="2020 Photo Calendar Poster Zazzle Com Calendar Poster Photo Calendar Personalised Calendar" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-drkxsntM2vfpXfzo0xNl5D8hPYtSzjmOpmqPruDr6IN1WCIuFafIX8sruxUSw8_ibPE';">
+        <figcaption>2020 Photo Calendar Poster Zazzle Com Calendar Poster Photo Calendar Personalised Calendar from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Mentioned below is an assortment of themes that you can choose from to give your Photo Calendar a custom touch-. Having a beautiful desk calendar is a great way to stay organized and on top of your tasks for a new month or year. Browse our calendar templates that our designers made and choose the one you like best.
+    </p>
+    <h3>If you want to print a classic 2021 calendar please visit our Online Calendar page.</h3>
+    <p>Try a Personalised Desk Calendar or a Slim Photo Calendar to hang on the wall if their desk has trouble staying clutter free. Upload your photos logo and even complete designs. You can also use in-built editing tools. Browse our calendar templates that our designers made and choose the one you like best.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="2021 Personalized Family Name Photo Calendar Zazzle Com Photo Calendar Magnetic Calendar Personalized Family" src="https://i.pinimg.com/474x/b0/85/87/b08587b8d570262ae4fac9ea75eaeace.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiz55XLW7LMgbPHOkTsq18Ia7lniXoWpvTDZMD1ALk4tv899ySPnxwhWquzsFUoY8IG6s';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Once youre done designing save your calendar.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Family Photo 2020 Calendar Family Is Everything Quotes Magnetic Business Cards Family Photos" src="https://i.pinimg.com/474x/76/c7/26/76c726fe95ed247fe5e191cc7f053f33.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZAfyPhDAdSd3UtZNtzHwsUwYq8QzcD5NG3aU_SOH5v0uX-aII8xVKGkOtsa17PJ3p888';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Snapfish allows you to create unique photo calendars that showcase all your precious memories.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="2020 Photo Calendar Poster Zazzle Com Calendar Poster Photo Calendar Personalised Calendar" src="https://i.pinimg.com/474x/39/99/23/399923f6216c608c8420290dfaabb9c2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-drkxsntM2vfpXfzo0xNl5D8hPYtSzjmOpmqPruDr6IN1WCIuFafIX8sruxUSw8_ibPE';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>So now create your free photo calendar that you would like to receive and your family friends will like it too.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="January 2019 Calendar Design Kalender Buku Gambar" src="https://i.pinimg.com/originals/06/ac/fa/06acfa45ad0aec5f55698a6d9ce88861.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSG6VvXIxa17gmH2S5AVaaUUKpxgYSSIwyv4pAYGY60Xpu1hVYOkweetkNqckD6o60rpk';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Our minimalist-style calendars possess a clean design and offer you plenty of room to add important events.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="24 Pretty Free Printable One Page Calendars For 2021 Papan Jadwal Buku Tulis Desain Kalender" src="https://i.pinimg.com/originals/ef/bd/08/efbd08398dde1682435c37331a5f6038.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZdUjoDIWgIyjw1LhNJhA9zZCW-iASnpVqzi3pTJMcVkILp9tl7Bqp9xg9KOtw3DtG8Y0';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Personalised calendars with photos logos text.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download A Free Printable 2021 Yearly Calendar From Vertex42 Com Calendar Printables Printable Yearly Calendar Free Printable Calendar" src="https://i.pinimg.com/736x/7b/39/01/7b3901422d5f7045ecabd31b5c762e55.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeEi-LHx7ShHlvUbWfh46j7bHsWJFjAMqcuQWGcrfUGdd6RQN7uLNT9GBVHsekTLHKM4w';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Customize with photos text and more.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="1 Page Calendar 2020 Template Design Creative Calendar Calendar Design Template Calendar Design" src="https://i.pinimg.com/originals/91/c1/80/91c18048a3779e5947968ab874e31771.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcfrog63XIC3vGfTgK59ezBP9K0482kMhSWTQjge6Mu3X9oMmbQz7PqNnNDxyQmnlYOog';" />
+        <small>Source: www.pinterest.com</small>
+                    <p>Browse our calendar templates that our designers made and choose the one you like best.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="2021 Calendar Year Cute Mod Custom Photo Collage Magnetic Invitation Zazzle Com Small Planner Pink Planner Photo Collage" src="https://i.pinimg.com/474x/e4/ba/6b/e4ba6b6d82a3c0ca16b3c18409bab62c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyRRJXa5qpFWdsbRKZgMGFTvnlCn9EDAvHcIPFQD3ZqMT-Esy1H-QqEg1v21AphPbvVes';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>With our easy calendar maker tools you can customize your calendar to your hearts content.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="2020 Magnetic Photo Calendar Green Zazzle Com Photo Calendar Custom Photo Full Year Calendar" src="https://i.pinimg.com/474x/f8/fb/43/f8fb431090cf8bab394083e9730acb16.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCeqBQNS3QXsqeAZKtaj7VqTOQH508QhIT7_TYTjq_k8YTl6pUGW0IWZUgi3D_n8B56Oc';" />
+        <small>Source: id.pinterest.com</small>
+                    <p>Simply upload your favorite photo or a selection of photos for a collage and select your design.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/best-place-for-royalty-free-images.html"><i>&larr; best place for royalty free images</i></a>
+                                                                    
+                                        <a href="/best-scenery-wallpaper.html"><i>best scenery wallpaper &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4529831,4,200,270,23,00011111']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4529831&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
